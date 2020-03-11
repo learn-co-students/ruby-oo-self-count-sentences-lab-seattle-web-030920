@@ -3,30 +3,18 @@ require 'pry'
 class String
 
   def sentence?
-    if self[-1] == "."
-      true
-    else
-      false
-    end
+    self[-1] == "." ? true : false
   end
 
   def question?
-    if self[-1] == "?"
-      true
-    else
-      false
-    end
+    self[-1] == "?" ? true : false
   end
 
   def exclamation?
-    if self[-1] == "!"
-      true
-    else
-      false
-    end
+    self[-1] == "!" ? true : false
   end
 
   def count_sentences
-    self.split(/\.|\?|\!/).delete_if {|w| w.size < 2}.size
+    self.split(/\.|\?|\!/).delete_if {|w| w.length < 2}.size
   end
 end
