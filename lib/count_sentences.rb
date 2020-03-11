@@ -20,11 +20,11 @@ class String
     array_s.each { |string|
     if string.sentence?
       count+=1
-    end
-    if string.question?
+    
+    elsif string.question?
       count+=1 
-    end
-    if string.exclamation?
+    
+    elsif string.exclamation?
       count+=1 
     end
    }
