@@ -16,10 +16,10 @@ class String
   end
 
   def count_sentences
-    new_array = self.split(/[!.?]/).reject {|string| string == ""}
-    new_array.length
+    self.split(/[!.?]/).reject {|string| string == ""}.length
   end
-  # binding.pry
+  
+  #binding.pry
   
  
 end
